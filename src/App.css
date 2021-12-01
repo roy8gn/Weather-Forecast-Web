@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+body {
+  background-color: rgb(86, 159, 233);
+}
+
+.app-body{
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  justify-self: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: flex-start;;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.current-waether {
+  padding: 5px;
+  width: 80%;
+  display:flex;
+  justify-self: center;
+  align-content: center;
+  border: black solid 1px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.search-input{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: black solid 3px;
+  font-size: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+.search:focus {
+  border: 3px solid rgb(10, 10, 10);
+  outline: none;
+}
+
+.city{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.temp{
+  font-size: 60px;
+  padding: 0px;
+  
+}
+
+.description{
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.top{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  height: 100%;
+  padding: 10px;
+}
+
+
+
+.detail{
+  margin: 4px 5px 3px 5px;
+  font-size: 18px;
+  align-self: center;
+}
+
+.icon{
+  font-size: 1.5rem;
+}
+
+.top-icon{
+  font-size: 3rem;
+}
+
+.flex-wrap{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.weather-forcast{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.weather-forcast-card-day{
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  background-color: rgba(230, 191, 134, 0.863);
+  border: 1px solid black;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+
+.weather-forcast-card-hour{
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  background-color: rgba(192, 182, 176, 0.685);
+  border: 1px solid black;
+  flex-wrap: wrap;
+}
+
+
+.viewHoursdBtn{
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 0px 10px;
+  font-size: 25px;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover{
+  transform: scale(1.1);
+  background-color: rgb(19, 72, 97);
+  border: 2px black solid;
+}
+.grow:active{
+  transform: scale(0.8);
+}
+.grow:focus {
+  border-color: inherit;
+  border: 2px black solid;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.main-detail{
+  font-size: 25px;
+  font-weight: 300;
+
+}
+
+
