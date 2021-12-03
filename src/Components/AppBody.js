@@ -16,7 +16,7 @@ function AppBody() {
     }
 
     const Search = (event) => {
-            const weatherApiCall = `http://api.weatherapi.com/v1/forecast.json?key=${key1}&q=${location}&days=6&aqi=no&alerts=no`
+            const weatherApiCall = `https://api.weatherapi.com/v1/forecast.json?key=${key1}&q=${location}&days=6&aqi=no&alerts=no`
             fetch(weatherApiCall)
                 .then(res => res.json())
                 .then(result => {
