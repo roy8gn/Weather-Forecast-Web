@@ -123,8 +123,6 @@ body {
   background-color: rgba(230, 191, 134, 0.863);
   border: 1px solid black;
   flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
 }
 
 .weather-forcast-card-hour{
