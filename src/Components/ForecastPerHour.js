@@ -13,7 +13,7 @@ function ForecastPerHour({ hours, show }) {
                 hours.map((hour, i) => {
                     var date = new Date(0)
                     date.setUTCSeconds(hour.time_epoch)
-                    if(current.getDay()===date.getDay() && current.getHours()>=date.getHours()){
+                    if(current.getDay()===date.getDay() && current.getHours()>date.getHours()){
                         return <div></div>
                     }
                     return (
