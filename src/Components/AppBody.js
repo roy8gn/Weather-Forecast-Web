@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Weather from "./Weather";
-
+import { Button } from 'react-bootstrap';
 
 function AppBody() {
     const [location, setLocation] = useState('')
@@ -16,20 +16,21 @@ function AppBody() {
     }
 
     const Search = (event) => {
-        if (event.key === "Enter") {
             const weatherApiCall = `http://api.weatherapi.com/v1/forecast.json?key=${key1}&q=${location}&days=6&aqi=no&alerts=no`
             fetch(weatherApiCall)
                 .then(res => res.json())
                 .then(result => {
                     setWeather(result)
                 })
-        }
     }
 
     return (
         <div className="app-body">
-            <input id="weatherLocation" className="search-input"
-                placeholder="Search for a city..." type="text" onChange={onChangeLocation} onKeyPress={Search} />
+            <div className="flex-wrap">
+                <input id="weatherLocation" className="search-input"
+                    placeholder="Search for a city..." type="text" onChange={onChangeLocation} />
+                <Button variant="secondary" className="SearchdBtn grow" onClick={Search}>Search</Button>
+            </div>
             <Weather weather={weather} roundDegree={roundDegree} />
         </div>
     )
