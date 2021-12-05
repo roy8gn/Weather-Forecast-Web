@@ -32,13 +32,11 @@ function WeatherDayCard({ forecast }) {
         <div className="">
             <Container>
                 <Row className='weather-forcast-card-day'>
-                    <Col xs={2} className='detail main-detail'>{date}</Col>
+                    <Col className='detail main-detail'>{date}</Col>
                     <Col xs={2} className='detail'><FaTemperatureLow className="icon" /> {forecast.day.mintemp_c}°C - {forecast.day.maxtemp_c}°C</Col>
                     <Col xs={2} className='detail'><FiSunrise className="icon" /> {forecast.astro.sunrise}</Col>
-                    <Col xs={2}className='detail'><FiSunset className="icon" /> {forecast.astro.sunset}</Col>
-                   
-                   
-                    <Col xs={2} className='detail'>{forecast.day.condition.text}</Col>
+                    <Col xs={2}className='detail'><FiSunset className="icon" /> {forecast.astro.sunset}</Col> 
+                    <Col className='detail'>{forecast.day.condition.text}</Col>
                     <Col><Button className="viewHoursdBtn grow" onClick={onButtonClick}>{buttonText}</Button></Col>
                 </Row>
             </Container>
